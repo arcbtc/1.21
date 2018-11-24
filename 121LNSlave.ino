@@ -11,13 +11,13 @@
 #include <GxIO/GxIO.h>
 
 //Set Arduino Strings for amount of Sats, description and API key
-String invoiceamounts = "400";
+String invoiceamount = "400";
 String invoicedescription = "sweets";
 String strikeapikey = "YourStrikeAPIKey";
 
 //Wifi details
-char SSID = "YourWIFISSID";
-char PASS = "YourWIFIPASS";
+char wifiSSID[] = "YourWIFISSID";
+char wifiPASS[] = "YourWIFIPASS";
 
 
 //Set other Arduino Strings used
