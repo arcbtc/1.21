@@ -8,6 +8,13 @@ With usability in mind 1.21 initially utilises Acinq Strike https://strike.acinq
 
 https://www.youtube.com/embed/Sa8vW9udCa0
 
+## Hardware needed
+
+* ESP32 (without built in OLED!)
+* Waveshare 1.54inch Epaper module
+* NPN Transistor (optional)
+* Wires and stuff
+
 ## Notes
 
 The project is written for the Arduino IDE, appropriate libraries in the includes will have to be downloaded seperately.
@@ -15,13 +22,6 @@ The project is written for the Arduino IDE, appropriate libraries in the include
 I used a standard ESP32 board, recognised in the Arduino IDE as a "LOLIN D32", although the code could be fiddled to support most ESP32s (as long as they don't have an OLED screen!).
 
 The trickiest part of the project was getting the ESP32 to build an appropriate byte-array image for the epaper from the QR code data - a more regular byte-array format, such as XBM, would not render correctly. https://javl.github.io/image2cpp/ was extremely helpful.
-
-## Hardware needed
-
-* ESP32 (without built in OLED!)
-* Waveshare 1.54inch Epaper module
-* NPN Transistor (optional)
-* Wires and stuff
 
 ## Limitations 
 
