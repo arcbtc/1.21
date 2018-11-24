@@ -24,7 +24,7 @@ I used a standard ESP32 board, recognised in the Arduino IDE as a "LOLIN D32", a
 The trickiest part of the project was getting the ESP32 to build an appropriate byte-array image for the epaper from the QR code data - a more regular byte-array format, such as XBM, would not render correctly. https://javl.github.io/image2cpp/ was extremely helpful.
 
 Epaper to ESP32 SPI connection example:
-![SPI PINS image](https://i.imgur.com/GZTUGaF.jpg)
+![SPI PINS image](https://i.imgur.com/4rdB2OC.jpg)
 
 ## Limitations 
 
