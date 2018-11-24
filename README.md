@@ -29,9 +29,9 @@ Epaper to ESP32 SPI connection example:
 1.21 sends an ON to GPIO PIN 17 for 2 secs, which can be adjusted in the code: 
 
 * GPIO PIN 17 is connected to the BASE of an NPN transistor
-* The COLLECTOR of the NPN is connected to the same 3v pin as the epaper
+* The COLLECTOR of the NPN is connected to the same 3v PIN as the epaper
 * The EMITTER of the NPN is connected to the live wire of the candy machine motor
-* The ground of the motor is connected the GND.
+* The ground of the motor is connected the GND PIN
 
 ## Limitations 
 
