@@ -26,6 +26,13 @@ The trickiest part of the project was getting the ESP32 to build an appropriate 
 Epaper to ESP32 SPI connection example:
 ![SPI PINS image](https://i.imgur.com/4rdB2OC.jpg)
 
+1.21 sends an ON to GPIO PIN 17 for 2 secs, which can be adjusted in the code: 
+
+* GPIO PIN 17 is connected to the BASE of an NPN transistor
+* The COLLECTOR of the NPN is connected to the same 3v pin as the epaper
+* The EMITTER of the NPN is connected to the live wire of the candy machine motor
+* The ground of the motor is connected the GND.
+
 ## Limitations 
 
 I'm an imbecile. This project would not have been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and with a little work the project could be secure and production ready. 
