@@ -17,7 +17,7 @@ https://www.youtube.com/embed/Sa8vW9udCa0
 
 ## Notes
 
-The project is written for the Arduino IDE, appropriate libraries in the includes will have to be downloaded seperately.
+The project is written for the Arduino IDE, appropriate libraries in the includes will have to be downloaded separately.
 
 I used a standard ESP32 board, recognised in the Arduino IDE as a "LOLIN D32", although the code could be fiddled to support most ESP32s (as long as they don't have an OLED screen!).
 
