@@ -8,8 +8,11 @@ With usability in mind 1.21 initially utilises Acinq Strike https://strike.acinq
 
 ## Hardware needed
 
-* ESP32 (without built in OLED)
+* ESP32 (without built in OLED!)
 * Waveshare 1.54inch Epaper module
 * NPN Transistor (optional)
 * Wires and stuff
 
+## Limitations 
+
+I'm an imbecile (evident in the quality of my code). This project would not of been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and probably with a little work the project could be secure and production ready. 
