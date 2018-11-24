@@ -6,9 +6,13 @@ The bitcoin lightning-network makes possible very small and fast bitcoin transac
 
 With usability in mind 1.21 initially utilises Acinq Strike, a quick to setup LN custodial service. If the shit hits the fan, 1.21 devices could very easily switch to a private LN node.
 
-Hardware needed
+###Hardware needed
 
 *ESP32 (without built in OLED)
+
 *Waveshare 1.54inch Epaper module
+
 *NPN Transistor (optional)
+
 *Wires and stuff
+
