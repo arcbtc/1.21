@@ -25,7 +25,7 @@ The trickiest part of the project was getting the ESP32 to build an appropriate 
 
 ## Limitations 
 
-I'm an imbecile. This project would not of been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and with a little work the project could be secure and production ready. 
+I'm an imbecile. This project would not have been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and with a little work the project could be secure and production ready. 
 
 ## Possible future improvements 
 
