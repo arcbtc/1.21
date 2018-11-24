@@ -23,6 +23,8 @@ I used a standard ESP32 board, recognised in the Arduino IDE as a "LOLIN D32", a
 
 The trickiest part of the project was getting the ESP32 to build an appropriate byte-array image for the epaper from the QR code data - a more regular byte-array format, such as XBM, would not render correctly. https://javl.github.io/image2cpp/ was extremely helpful.
 
+![SPI PINS image](https://i.imgur.com/WlTktx2.jpg)
+
 ## Limitations 
 
 I'm an imbecile. This project would not have been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and with a little work the project could be secure and production ready. 
@@ -34,5 +36,5 @@ I'm an imbecile. This project would not have been possible without the kind help
 * Discuss with Acinq ability to search payment requests by description, to make it easier for multiple devices to be requesting payments.
 
 
-![alt text](https://i.imgur.com/dZMuadn.jpg)
+![flowchart image](https://i.imgur.com/dZMuadn.jpg)
 
