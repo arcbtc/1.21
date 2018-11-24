@@ -6,9 +6,15 @@ The bitcoin lightning-network makes possible very small and fast bitcoin transac
 
 With usability in mind 1.21 initially utilises Acinq Strike https://strike.acinq.co/, a quick to setup LN custodial service. However, if the shit hits the fan, 1.21 devices could very easily switch to a private LN node.
 
-The project is written for the Arduino IDE, and appropriate libraries will have to be downloaded.
-
 https://www.youtube.com/embed/Sa8vW9udCa0
+
+## Notes
+
+The project is written for the Arduino IDE, appropriate libraries in the includes will have to be downloaded seperately.
+
+I used a standard ESP32 board, recognised in the Arduino IDE as a "LOLIN D32", although the code could be fiddled to support most ESP32s (as long as they don't have an OLED screen!).
+
+The trickiest part of the project was getting the ESP32 to build an appropriate byte-array image for the epaper from the QR code data - a more regular byte-array format, such as XBM, would not render correctly. https://javl.github.io/image2cpp/ was extremely helpful.
 
 ## Hardware needed
 
@@ -21,8 +27,6 @@ https://www.youtube.com/embed/Sa8vW9udCa0
 
 I'm an imbecile. This project would not of been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and with a little work the project could be secure and production ready. 
 
-The trickiest part of the project was getting the ESP32 to build an appropriate byte-array image for the epaper from the QR code data - a more regular byte-array format, such as XBM, would not render correctly. https://javl.github.io/image2cpp/ was extremely helpful.
-
 ## Possible future improvements 
 
 * Optional access point broadcast from ESP32 for changing the wifi, description and sats amount (probably triggered by a physical switch).
@@ -31,3 +35,4 @@ The trickiest part of the project was getting the ESP32 to build an appropriate 
 
 
 ![alt text](https://i.imgur.com/dZMuadn.jpg)
+
