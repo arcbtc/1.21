@@ -15,7 +15,7 @@ With usability in mind 1.21 initially utilises Acinq Strike https://strike.acinq
 
 ## Limitations 
 
-I'm an imbecile (evident in the quality of my code). This project would not of been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and with a little work the project could be secure and production ready. 
+I'm an imbecile. This project would not of been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and with a little work the project could be secure and production ready. 
 
 
 https://www.youtube.com/embed/Sa8vW9udCa0
