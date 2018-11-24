@@ -1,4 +1,4 @@
-# 1.21 (a cheap to run/make lightning-network slave module)
+# 1.21 - a cheap to run/make lightning-network slave module
 
 
 ## Rationale
