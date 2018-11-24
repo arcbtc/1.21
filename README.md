@@ -6,7 +6,7 @@ The bitcoin lightning-network makes possible very small and fast bitcoin transac
 
 With usability in mind 1.21 initially utilises Acinq Strike https://strike.acinq.co/, a quick to setup LN custodial service. However, if the shit hits the fan, 1.21 devices could very easily switch to a private LN node.
 
-https://www.youtube.com/embed/Sa8vW9udCa0
+[![LN Slave Mod](https://imgur.com/jYLWbzv)](https://www.youtube.com/watch?v=Sa8vW9udCa0)
 
 ## Hardware needed
 
