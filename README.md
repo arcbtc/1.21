@@ -1,4 +1,6 @@
 
+![SPI PINS image](https://i.imgur.com/S3tp45q.jpg)
+
 # 1.21 - a cheap to run/make lightning-network slave module
 
 ## Rationale
