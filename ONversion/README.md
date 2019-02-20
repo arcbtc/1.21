@@ -3,9 +3,12 @@
 # 1.21 OpenNode Edition
 
 ## Rationale
-This version of 1.21 uses OpenNode. Set up a free account here https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f24900d
+This version of 1.21 uses OpenNode. Set up a free account here 
+https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f24900d
 
-[![LN Slave Mod](https://i.imgur.com/JYw6HYc.jpg)](https://www.youtube.com/watch?v=Sa8vW9udCa0)
+Watch the tutorial below for instructions on how to wire up the sweet machine.
+
+[![LN Slave Mod](https://i.imgur.com/JYw6HYc.jpg)](https://www.youtube.com/)
 
 ## Hardware needed
 
