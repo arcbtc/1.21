@@ -3,7 +3,7 @@
 # 1.21 OpenNode Edition
 
 ## Rationale
-This version of 1.21 uses OpenNode. Set up a free account here 
+This version of 1.21 sweet machine uses OpenNode. Set up a free account here 
 https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f24900d
 
 Watch the tutorial below for instructions on how to wire up the sweet machine.
