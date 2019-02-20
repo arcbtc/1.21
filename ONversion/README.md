@@ -24,7 +24,7 @@ The project is written for the Arduino IDE, appropriate libraries in the include
 I used a standard ESP32 board, recognised in the Arduino IDE as a "LOLIN D32", although the code could be fiddled to support most ESP32s (as long as they don't have an OLED screen!).
 
 Epaper to ESP32 SPI connection example:
-![SPI PINS image](https://i.imgur.com/4rdB2OC.jpg)
+![SPI PINS image](https://i.imgur.com/AB4DInM.jpg)
 
 1.21 sends an ON to GPIO PIN 17 for 2 secs, which can be adjusted in the code: 
 
