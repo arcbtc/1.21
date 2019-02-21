@@ -8,7 +8,7 @@ https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f24900d
 
 Watch the tutorial below for instructions on how to wire up the sweet machine.
 
-[![LN Slave Mod](https://i.imgur.com/JYw6HYc.jpg)](https://www.youtube.com/)
+[![LN Slave Mod](https://i.imgur.com/JYw6HYc.jpg)](https://www.youtube.com/watch?v=uMO651YS0y4)
 
 ## Hardware needed
 
@@ -38,6 +38,4 @@ Epaper to ESP32 SPI connection example:
 
 I'm an imbecile. This project would not have been possible without the kind help from folks at Fulmo's lightning-network hackdays http://fulmo.org/. The project has been developed for demonstration purposes only, although it is surprisingly stable, and with a little work the project could be secure and production ready. 
 
-
-![flowchart image](https://i.imgur.com/dZMuadn.jpg)
 
