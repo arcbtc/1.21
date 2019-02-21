@@ -15,6 +15,7 @@ Watch the tutorial below for instructions on how to wire up the sweet machine.
 * ESP32 (without built in OLED!)
 * MH-ET-LIVE epaper module 
 * NPN Transistor
+* Electronic Sweet Machine (Global Gizmos Candy Dispenser)
 * Wires and stuff
 
 ## Notes
