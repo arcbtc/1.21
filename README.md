@@ -3,20 +3,24 @@
 
 # 1.21 - a cheap to run/make lightning-network slave module
 
-(note, there is an upate version of this project here https://github.com/arcbtc/1.21/tree/master/ONversion)
-
 ## Rationale
 The bitcoin lightning-network makes possible very small and fast bitcoin transactions. When making real-world small transactions, usability and low power consumption is important. Previous IoT implementations, such as candy machines, rely on the device running a lightning node and usually an energy consuming output like a tablet. The approach of 1.21 is to have a single well balanced lightning node in a secure location (MASTER), communicating with low-powered (SLAVE) public IoT devices. 
 
-With usability in mind 1.21 initially utilises Acinq Strike https://strike.acinq.co/, a quick to setup LN custodial service. However, if the shit hits the fan, 1.21 devices could very easily switch to a private LN node.
+With usability in mind 1.21 initially utilises OpenNode, a quick to setup LN custodial service. 
 
-[![LN Slave Mod](https://i.imgur.com/PN3KT0S.png)](https://www.youtube.com/watch?v=Sa8vW9udCa0)
+Sign up here!
+https://opennode.co/join/f774f2a0-1377-45e2-b719-6b821f24900d
+
+Watch the tutorial below for instructions on how to wire up the sweet machine.
+
+[![LN Slave Mod](https://i.imgur.com/JYw6HYc.jpg)](https://www.youtube.com/watch?v=uMO651YS0y4)
 
 ## Hardware needed
 
 * ESP32 (without built in OLED!)
-* Waveshare 1.54inch Epaper module
-* NPN Transistor (optional)
+* MH-ET-LIVE epaper module 
+* NPN Transistor
+* Electronic Sweet Machine (Global Gizmos Candy Dispenser)
 * Wires and stuff
 
 ## Notes
@@ -45,8 +49,6 @@ I'm an imbecile. This project would not have been possible without the kind help
 
 * Optional access point broadcast from ESP32 for changing the wifi, description and sats amount (probably triggered by a physical switch).
 * Deep sleep power-saving mode when the device has been idle for a while.
-* Discuss with Acinq ability to search payment requests by description, to make it easier for multiple devices to be requesting payments.
 
 
 ![flowchart image](https://i.imgur.com/dZMuadn.jpg)
-
