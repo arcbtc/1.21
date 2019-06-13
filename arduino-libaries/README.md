@@ -1,6 +1,4 @@
-# All the arduino libaries needed 
-# + 
-# the hardware file with the ESP32 boards
+# All the arduino libaries needed <br> + the hardware file with the ESP32 boards
 
 Libary files can just be copied into you "Arduino" "Library" folder
 
