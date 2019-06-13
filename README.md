@@ -1,5 +1,5 @@
 # 1.21 - Bitcoin Sweet Machine!
-*a cheap to run/make lightning-network slave module*
+*A cheap to run/make lightning-network slave module.*
 
 ## Rationale
 The bitcoin lightning-network makes possible very small and fast bitcoin transactions. When making real-world small transactions, usability and low power consumption is important. Previous IoT implementations, such as candy machines, rely on the device running a lightning node and usually an energy consuming output like a tablet. The approach of 1.21 is to have a single well balanced lightning node in a secure location (MASTER), communicating with low-powered (SLAVE) public IoT devices. 
