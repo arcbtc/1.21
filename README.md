@@ -1,4 +1,4 @@
-# 1.21 - LN Sweet Machine!
+# 1.21 - Bitcoin Sweet Machine!
 *a cheap to run/make lightning-network slave module*
 
 ## Rationale
