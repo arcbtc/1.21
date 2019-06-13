@@ -1,5 +1,3 @@
-# All the arduino libaries needed <br> + the hardware file with the ESP32 boards
+# All the arduino libaries needed 
 
-Libary files can just be copied into you "Arduino" "Library" folder
-
-The esspressif ESP32 file can be copied into your "Hardware" folder
+Libary files can just be copied into you "Arduino" "Library" folder (GxEPD2 and ArduinoJson will have to be unzipped first)
