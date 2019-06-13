@@ -1,15 +1,13 @@
 
-void fetchpayment(String SATSAMOUNT){
-
+void fetchpayment(){
 
   WiFiClientSecure client;
 
   if (!client.connect(host, httpsPort)) {
-
     return;
   }
 
-  String topost = "{  \"amount\": \""+ SATSAMOUNT +"\", \"description\": \""+ description  +"\", \"route_hints\": \""+ hints  +"\"}";
+  String topost = "{  \"amount\": \""+ amount  +"\", \"description\": \""+ description  +"\", \"route_hints\": \""+ hints  +"\"}";
   String url = "/v1/charges";
 
    client.print(String("POST ") + url + " HTTP/1.1\r\n" +
@@ -30,18 +28,16 @@ void fetchpayment(String SATSAMOUNT){
     }
   }
   String line = client.readStringUntil('\n');
+  Serial.println(line);
+    const size_t capacity = 169*JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(168) + 3800;
+    DynamicJsonDocument doc(capacity);
 
-  
-const size_t capacity = 169*JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(168) + 3800;
-DynamicJsonBuffer jsonBuffer(capacity);
+    deserializeJson(doc, line);
 
-JsonObject& root = jsonBuffer.parseObject(line);
-
-JsonObject& data = root["data"];
-String data_idd = data["id"]; 
-data_id = data_idd;
-String data_lightning_invoice_payreqq = data["lightning_invoice"]["payreq"];
-data_lightning_invoice_payreq = data_lightning_invoice_payreqq;
+    String data_idd = doc["data"]["id"]; 
+    data_id = data_idd;
+    String data_lightning_invoice_payreqq = doc["data"]["lightning_invoice"]["payreq"];
+    data_lightning_invoice_payreq = data_lightning_invoice_payreqq;
 }
 
 
@@ -79,12 +75,11 @@ void checkpayment(String PAYID){
 
   
 const size_t capacity = JSON_OBJECT_SIZE(1) + JSON_OBJECT_SIZE(2) + JSON_OBJECT_SIZE(4) + JSON_OBJECT_SIZE(14) + 650;
-DynamicJsonBuffer jsonBuffer(capacity);
+ DynamicJsonDocument doc(capacity);
 
-JsonObject& root = jsonBuffer.parseObject(line);
+    deserializeJson(doc, line);
 
-JsonObject& data = root["data"];
-String data_statuss = data["status"]; 
+String data_statuss = doc["data"]["status"]; 
 data_status = data_statuss;
 Serial.println(data_status);
 
