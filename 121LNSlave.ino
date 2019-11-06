@@ -7,7 +7,7 @@
 
 #include <Fonts/FreeSansBold18pt7b.h>
 #include <Fonts/FreeSansBold9pt7b.h>
-GxEPD2_BW<GxEPD2_154, GxEPD2_154::HEIGHT> display(GxEPD2_154(/*CS=5*/ SS, /*DC=*/ 17, /*RST=*/ 16, /*BUSY=*/ 4));
+GxEPD2_BW<GxEPD2_154, GxEPD2_154::HEIGHT> display(GxEPD2_154(/*CS=5*/ SS, /*DC=*/ 22, /*RST=*/ 21, /*BUSY=*/ 4));
 
 char wifiSSID[] = "WIFINAME";
 char wifiPASS[] = "PASSWORD";
