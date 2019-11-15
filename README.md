@@ -50,3 +50,8 @@ I'm an imbecile. This project would not have been possible without the kind help
 
 
 ![flowchart image](https://i.imgur.com/dZMuadn.jpg)
+
+# Tip me
+If you like this project and might even use or extend it, why not send some tip love!
+https://paywall.link/to/f4e4e
+
