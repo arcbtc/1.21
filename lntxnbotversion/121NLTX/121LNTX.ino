@@ -12,7 +12,7 @@ GxEPD2_BW<GxEPD2_154, GxEPD2_154::HEIGHT> display(GxEPD2_154(/*CS=5*/ SS, /*DC=*
 char wifiSSID[] = "WIFINAME";
 char wifiPASS[] = "PASSWORD";
 
-float price = 1.50;
+float price = 1.50; //price per cookie
 float satoshis;
 int intsats;
 float conversion;
