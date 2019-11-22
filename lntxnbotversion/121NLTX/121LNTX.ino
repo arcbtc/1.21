@@ -13,6 +13,9 @@ char wifiSSID[] = "WIFINAME";
 char wifiPASS[] = "PASSWORD";
 
 float price = 1.50; //price per cookie
+String on_currency = "BTCGBP"; //currency can be changed here ie BTCUSD BTCGBP etc
+String on_sub_currency = on_currency.substring(3);
+
 float satoshis;
 int intsats;
 float conversion;
@@ -101,7 +104,7 @@ fetchpayment();
   display.setTextColor(GxEPD_BLACK);
   display.setCursor(20, 80);
   display.println("COOKIE");
-  display.println(price + "EUR");
+  display.println(price + on_sub_currency);
   display.setFont(&FreeSansBold9pt7b);
   display.println(" Press button for QR");
 
