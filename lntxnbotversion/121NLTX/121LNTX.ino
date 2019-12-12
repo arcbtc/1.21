@@ -27,6 +27,7 @@ bool settle = false;
 int httpsPort = 443;
 const char* lntxbothost = "YOURHOST"; //format like lntxbot.alhur.es
 String invoicekey = "YOUR-INVOICE-KEY"; 
+String memo = "Cookie pack 12";
 
 void setup() {
 display.init(115200);
@@ -66,7 +67,7 @@ void loop() {
   
 int counta = 0;
 
-fetchpayment();
+fetchpayment(String(intsats));
 
   display.firstPage();
   do
@@ -112,6 +113,8 @@ fetchpayment();
   while (display.nextPage());{
   }
   
+  Serial.println("Going to sleep now");
+  delay(1000);
   esp_deep_sleep_start();
 }
 
@@ -222,35 +225,26 @@ void checkpayment(){
 
 
 // QR maker function
-void qrmmaker(String xxx){
-  tft.fillScreen(TFT_WHITE);
-  XXX.toUpperCase();
- const char* addr = XXX.c_str();
- Serial.println(addr);
+void qrmmaker(String lnurl) {
+  const char* addr = lnurl.c_str();
+  Serial.println(addr);
+  int ps = 3;
   int qrSize = 12;
-  int sizes[17] = { 14, 26, 42, 62, 84, 106, 122, 152, 180, 213, 251, 287, 331, 362, 412, 480, 504 };
-  int len = String(addr).length();
-  for(int i=0; i<17; i++){
-    if(sizes[i] > len){
-      qrSize = i+1;
-      break;
-    }
-  }
   QRCode qrcode;
   uint8_t qrcodeData[qrcode_getBufferSize(qrSize)];
-  qrcode_initText(&qrcode, qrcodeData, qrSize - 2, ECC_LOW, addr);
-  Serial.println(qrSize );
- 
-  float scale = 2;
-
+  qrcode_initText(&qrcode, qrcodeData, qrSize, ECC_LOW, addr);
+  display.fillScreen(GxEPD_WHITE);
   for (uint8_t y = 0; y < qrcode.size; y++) {
     for (uint8_t x = 0; x < qrcode.size; x++) {
-      if(qrcode_getModule(&qrcode, x, y)){       
-        display.fillRect(15+3+scale*x, 3+scale*y, scale, scale, GxEPD_BLACK);
-      }
-      else{
-        display.fillRect(15+3+scale*x, 3+scale*y, scale, scale, GxEPD_WHITE);
+      //If pixel is on, we draw a ps x ps black square
+      if (qrcode_getModule(&qrcode, x, y)) {
+        for (int xi = x * ps + 2; xi < x * ps + ps + 2; xi++) {
+          for (int yi = y * ps + 2; yi < y * ps + ps + 2; yi++) {
+            display.writePixel(xi, yi, GxEPD_BLACK);
+          }
+        }
       }
     }
   }
+
 }
